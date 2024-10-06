@@ -2,14 +2,13 @@
 
 <?php
 
-$price = 152;
 $payment = 200;
-$coins = [1, 2, 5, 10]
-$currency = 48;
-
-
+$price = 152;
+$coins = [10, 5, 2, 1]
+$rest = $payment - $price;
 
 echo "Montant à payer : $price € <br>";
 echo "Montant versé : $payment € <br>";
-echo "Reste à payer : $currency € <br>";
+echo "Reste à payer :  $rest € <br>";
+
 
