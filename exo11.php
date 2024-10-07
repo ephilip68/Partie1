@@ -10,10 +10,13 @@ $nbMarques = count($marques);
 
 echo "Il y a $nbMarques marques de voitures dans le tableau : <br>";
 
+echo "<ul>";
+
 foreach ($marques as $valeur) {
-    echo "<li>$valeur</li>";
+    echo "<li>$valeur</li>";  
 }
 
+echo "</ul>";
 // echo $marques [0]."<br>";
 // echo $marques [1]."<br>";
 // echo $marques [2]."<br>";

@@ -18,7 +18,6 @@ function calculerMoyenne($notes) : float {
     return $moyenne;
 }
 
-
 foreach($eleves as $eleve => $notes){
     echo "Les notes obtenues par l'élève sont : 10 12 8 19 3 16 11 13 9<br>";
     echo "Sa moyenne général est donc de : ".calculerMoyenne($notes)."<br>";
