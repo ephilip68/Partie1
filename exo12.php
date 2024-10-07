@@ -12,24 +12,24 @@ function hello() {
         "Marie-Claire" => "ENG"
     ];
 
-    foreach($array as $names => $langues){
+    foreach($array as $name => $langue){
     }
 
-    $langues = 3;
+    // $langues = 3;
 
-    switch($langues){
+    switch($langue){
         case 1: 
-            $langues = "FRA";
+            $langue = "FRA";
             $names = "Mickaël";
             echo "Salut ". $names;
         break;
         case 2: 
-            $langues = "ESP";
+            $langue = "ESP";
             $names = "Virgile";
             echo "Hola ". $names;
         break;
         case 3: 
-            $langues = "ENG";
+            $langue = "ENG";
             $names = "Marie-Claire";
             echo "Hello ". $names;
         break;
