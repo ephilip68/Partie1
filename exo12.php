@@ -3,44 +3,46 @@
 <?php 
 
 
+// Tableau
+$array = array( 
 
+    // Clé et valeur
+    "Mickaël" => "FRA", 
+    "Virgile" => "ESP", 
+    "Marie-Claire" => "ENG"
+    
+);
 
-function hello() {
-    $array = [
-        "Mickaël" => "FRA", 
-        "Virgile" => "ESP", 
-        "Marie-Claire" => "ENG"
-    ];
+// Tri les élément du tableau de A à Z
+ksort($array);
 
-    foreach($array as $name => $langue){
-    }
+// Assignera les variables $name et $langue à la variable $array à chaque itération
+foreach($array as $name => $langue){
 
-    // $langues = 3;
-
-    switch($langue){
-        case 1: 
-            $langue = "FRA";
-            $names = "Mickaël";
-            echo "Salut ". $names;
-        break;
-        case 2: 
-            $langue = "ESP";
-            $names = "Virgile";
-            echo "Hola ". $names;
-        break;
-        case 3: 
-            $langue = "ENG";
-            $names = "Marie-Claire";
-            echo "Hello ". $names;
-        break;
-        default: 
-            echo "error";
-        break; 
-    } 
+    hello($name,$langue);
     
 }
 
-hello();
+// function personnalisée "hello()" utilisant un swith afin de dire bonjour aux différents personnes dans leur langue respective
+function hello($name, $langue) {
+
+    switch($langue){
+        case "FRA": 
+            echo "Salut ". $name."<br>";
+        break;
+        case "ESP": 
+            echo "Hola ". $name."<br>";
+        break;
+        case "ENG": 
+            echo "Hello ". $name."<br>";
+        break;
+        default: 
+            echo "Langue non gérée pour ".$name."<br>";
+        break; 
+    } 
+     
+}
+
 
 
 
